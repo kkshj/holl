@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心我的关注</title>
+    <link rel="stylesheet" href="css/red-dragon-development.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header-class.css">
+    <link rel="stylesheet" href="css/footer-class.css">
+  
+    <link rel="stylesheet" href="css/hospital-doctor-list.css">
+      <link rel="stylesheet" href="css/appointment.css">
+    
+          <link rel="stylesheet" href="css/doctor-list.css">
+       <link rel="stylesheet" href="css/doctor-all-list.css">
+       <link rel="stylesheet" href="css/doctor-attention.css">
+         <link rel="stylesheet" href="css/doctor-center.css">
+      <link rel="stylesheet" href="css/doctor-center-manage.css">s
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/hospital-payment.js"></script>
+</head>
+
+<body>
+    <iframe src="header.html" width="100%" height="140" scrolling="no" frameborder="0"></iframe>
+    <nav class="crumbs">
+        <div class="container">当前位置：<a href="">首页</a>><span>个人中心</span></div>
+    </nav>
+    <div class="doctorCenter">
+        <div class="doctorCenter_left">
+            <div class="doctorCenter_left_top">
+                <p><img src="images/img-6.png"></p>
+                <p>138***13388</p>
+             <p class="authentication">已认证</p>
+                <p class="un_authentication"><a href="" title="">未认证</a></p>
+            </div>
+            <div class="doctorCenter_left_foot">
+                <ul>
+                    <li><a href="">预约订单</a>
+                    </li>
+                    <li><a href="" title="">就诊人管理</a></li>
+                    <li  class="indent"><a href="" title="">我的关注</a> </li>
+                    <li><a href="" title="">资料与账户</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="doctorCenter_right">
+            <div class="doctorCenter_right_top doctorManage_right_top">
+                <span>我关注的医生</span>
+                <span onclick='clickManage(this)'>管理</span>
+             
+            </div>
+            <div class="doctorCenter_right_foot">
+                        <div class="doctorList doctorAll_doctorList">
+            <ul>
+                <li>
+                    <span><img src="images/img-14.png" onclick="attentionClick(this,2)"></span>
+                    <div class="doctorList_introduce doctorAll_introduce doctor_appointment">
+                        <p><img src="images/img-6.png" ></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                         <span><img src="images/img-14.png" onclick="attentionClick(this,id)"></span>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                         <span><img src="images/img-14.png" onclick="attentionClick(this,id)"></span>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                         <span><img src="images/img-14.png" onclick="attentionClick(this,id)"></span>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                         <span><img src="images/img-14.png"></span>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+                <li>
+                    <div class="doctorList_introduce doctorAll_introduce">
+                        <p><img src="images/img-6.png"></p>
+                        <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                        <p>水电费 打发士大夫</p>
+                        <p>水电费</p>
+                        <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                        <p> <span>余号 236</span> <span>预约</span></p>
+                        <!-- <p><button>义诊</button></p> -->
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+            </div>
+        </div>
+    </div>
+       <div class="delete_spring">
+        <div class="delete_spring_contant">
+            <p>确定要删除吗？</p>
+            <p>
+                <button type="text" onclick="deleteCancel()">取消</button>
+                <button type="text" onclick="determine(this)">确定</button>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        deleteCancel=()=>{
+                $('.delete_spring').hide()
+        }
+        attentionClick=(thi,id)=>{
+            console.log(5);
+         $('.delete_spring').show()
+               $('.delete_spring p:nth-child(2) button:nth-child(2)').attr('data_id',id) 
+        }
+        determine=(thi)=>{
+            console.log($(thi).attr('data_id'))
+        }
+    </script>
+    <footer>
+        <p>Copyright@2013-2016 www.jkscw.com.cn 版权所有 蜀ICP备09023884号</p>
+        <p>技术支持：四川快医科技有限责任公司</p>
+    </footer>
+</body>
+
+</html>

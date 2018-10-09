@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>支付页面</title>
+    <link rel="stylesheet" href="css/red-dragon-development.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header-class.css">
+    <link rel="stylesheet" href="css/footer-class.css">
+    <link rel="stylesheet" href="css/hospital-payment.css">
+    <link rel="stylesheet" href="css/hospital-doctor-list.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/hospital-payment.js"></script>
+</head>
+<body>
+<header>
+    <div class="top-info-bar">
+        <div class="container">
+            <span class="left">欢迎来到健康四川！</span>
+            <a href="#" class="left login-register-link">登录｜注册</a>
+            <span class="right">客服电话：400-1681120</span>
+        </div>
+    </div>
+    <div class="top-logo-search-bar">
+        <div class="container">
+            <img class="left" src="images/website-logo.png" alt="健康四川">
+            <i class="left"></i>
+            <div class="left company-info-text">
+                <span>四川省卫生和计划生育委员会监管</span>
+                <span>四川省卫生和计划生育信息中心主办</span>
+            </div>
+            <input type="text" class="left search-input" placeholder="搜索医院/科室/医生">
+            <button class="left search-button"></button>
+            <a href="" class="right download-app">
+                <img class="left" src="images/App-download.png">
+                <div class="left">
+                    <span>手机端下载</span>
+                    <span>更好体验在线问诊服务</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</header>
+<nav class="crumbs"><div class="container">当前位置：<a href="">首页</a>><a href="">医院列表</a>><a href="">四川大学华西医院</a>>内科</div></nav>
+<h4>你已成功提交预约提单，请尽快支付确定，否则号源将被释放</h4>
+
+<div class="payment_contant">
+    <div class="payment_contant_center">
+        <h3>预约信息</h3>
+        <p class="payment_contant_doctor"><span>就诊人： <small>谢腾飞</small> </span><span>订单编号：<small>5555555555555555555</small> </span> </p>
+        <table>
+            <tr>
+            	  <th>医生</th>
+                <th>职称</th>
+                <th>医院</th>
+                <th>科室</th>
+                <th>预约时间</th>
+                <th>预约挂号费</th>
+            </tr>
+        
+            
+            <tr>
+                <td>高晓光</td>
+                <td>付主治医生</td>
+                <td>家分行 按时发放</td>
+                <td>外科门诊</td>
+                <td>2018-08-05</td>
+                <td>￥8:00</td>
+                
+            </tr>
+        </table>
+        <h3 class="payment_see">支付方式</h3>
+        <div class="payment_contant_foot">
+        	<img src="images/img-4.png" onclick="payment(this)">
+        	<img src="images/img-3.png" onclick="payment(this)">
+        	<img src="images/img-5.png" onclick="payment(this)">
+        	<img src="images/img-2.png" onclick="payment(this)" class="payment_way">
+        </div>
+    </div>
+</div>
+<p class="payment_but"><button>提交确认</button></p>
+<footer>
+    <p>Copyright@2013-2016 www.jkscw.com.cn 版权所有 蜀ICP备09023884号</p>
+    <p>技术支持：四川快医科技有限责任公司</p>
+</footer>
+</body>
+</html>

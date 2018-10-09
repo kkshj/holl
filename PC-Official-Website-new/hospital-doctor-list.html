@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/red-dragon-development.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header-class.css">
+    <link rel="stylesheet" href="css/footer-class.css">
+    <link rel="stylesheet" href="css/pagination-class.css">
+    <link rel="stylesheet" href="css/hospital-doctor-list.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/hospital-doctor-list.js"></script>
+</head>
+<body>
+<header>
+    <div class="top-info-bar">
+        <div class="container">
+            <span class="left">欢迎来到健康四川！</span>
+            <a href="#" class="left login-register-link">登录｜注册</a>
+            <span class="right">客服电话：400-1681120</span>
+        </div>
+    </div>
+    <div class="top-logo-search-bar">
+        <div class="container">
+            <img class="left" src="images/website-logo.png" alt="健康四川">
+            <i class="left"></i>
+            <div class="left company-info-text">
+                <span>四川省卫生和计划生育委员会监管</span>
+                <span>四川省卫生和计划生育信息中心主办</span>
+            </div>
+            <input type="text" class="left search-input" placeholder="搜索医院/科室/医生">
+            <button class="left search-button"></button>
+            <a href="" class="right download-app">
+                <img class="left" src="images/App-download.png">
+                <div class="left">
+                    <span>手机端下载</span>
+                    <span>更好体验在线问诊服务</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</header>
+<nav class="crumbs"><div class="container">当前位置：<a href="">首页</a>><a href="">医院列表</a>><a href="">四川大学华西医院</a>>内科</div></nav>
+<div class="container date">
+    <span class="left date-type">预约日期&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+    <ul class="right">
+        <li class="left chosen" onclick="choseDate(this)">不限</li>
+        <li class="left" onclick="choseDate(this)">7/20周五</li>
+        <li class="left" onclick="choseDate(this)">7/20周五</li>
+        <li class="left" onclick="choseDate(this)">7/20周五</li>
+        <li class="left" onclick="choseDate(this)">7/20周五</li>
+        <li class="left" onclick="choseDate(this)">7/20周五</li>
+        <li class="left" onclick="choseDate(this)">7/20周五</li>
+        <li class="left" onclick="choseDate(this)">7/20周五</li>
+        <li class="left" onclick="choseDate(this)">7/20周五</li>
+    </ul>
+</div>
+<div class="container doctor-list">
+    <ul>
+        <li class="left">
+            <img src="images/mock-image.jpg" alt="">
+            <span class="doctor-info">李薇&nbsp;&nbsp;&nbsp;&nbsp;主任医生</span>
+            <span class="organization">西南医科大学附属医院</span>
+            <span class="department">呼吸内科</span>
+            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医药调理；脾胃虚弱及睡眠障碍、多汗、亚健康调理等。</p>
+            <div class="container bottom-info">
+                <span class="left count">余号109</span>
+                <a class="right" href="">预约</a>
+            </div>
+        </li>
+        <li class="left">
+            <img src="images/mock-image.jpg" alt="">
+            <span class="doctor-info">李薇&nbsp;&nbsp;&nbsp;&nbsp;主任医生</span>
+            <span class="organization">西南医科大学附属医院</span>
+            <span class="department">呼吸内科</span>
+            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医药调理；脾胃虚弱及睡眠障碍、多汗、亚健康调理等。</p>
+            <div class="container bottom-info">
+                <span class="left count">余号109</span>
+                <a class="right" href="">预约</a>
+            </div>
+        </li>
+        <li class="left">
+            <img src="images/mock-image.jpg" alt="">
+            <span class="doctor-info">李薇&nbsp;&nbsp;&nbsp;&nbsp;主任医生</span>
+            <span class="organization">西南医科大学附属医院</span>
+            <span class="department">呼吸内科</span>
+            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医药调理；脾胃虚弱及睡眠障碍、多汗、亚健康调理等。</p>
+            <div class="container bottom-info">
+                <span class="left count">余号109</span>
+                <a class="right" href="">预约</a>
+            </div>
+        </li>
+        <li class="left">
+            <img src="images/mock-image.jpg" alt="">
+            <span class="doctor-info">李薇&nbsp;&nbsp;&nbsp;&nbsp;主任医生</span>
+            <span class="organization">西南医科大学附属医院</span>
+            <span class="department">呼吸内科</span>
+            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医药调理；脾胃虚弱及睡眠障碍、多汗、亚健康调理等。</p>
+            <div class="container bottom-info">
+                <span class="left count">余号109</span>
+                <a class="right" href="">预约</a>
+            </div>
+        </li>
+        <li class="left">
+            <img src="images/mock-image.jpg" alt="">
+            <span class="doctor-info">李薇&nbsp;&nbsp;&nbsp;&nbsp;主任医生</span>
+            <span class="organization">西南医科大学附属医院</span>
+            <span class="department">呼吸内科</span>
+            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医药调理；脾胃虚弱及睡眠障碍、多汗、亚健康调理等。</p>
+            <div class="container bottom-info">
+                <span class="left count">余号109</span>
+                <a class="right" href="">预约</a>
+            </div>
+        </li>
+        <li class="left">
+            <img src="images/mock-image.jpg" alt="">
+            <span class="doctor-info">李薇&nbsp;&nbsp;&nbsp;&nbsp;主任医生</span>
+            <span class="organization">西南医科大学附属医院</span>
+            <span class="department">呼吸内科</span>
+            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医药调理；脾胃虚弱及睡眠障碍、多汗、亚健康调理等。</p>
+            <div class="container bottom-info">
+                <span class="left count">余号109</span>
+                <a class="right" href="">预约</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<footer>
+    <p>Copyright@2013-2016 www.jkscw.com.cn 版权所有 蜀ICP备09023884号</p>
+    <p>技术支持：四川快医科技有限责任公司</p>
+</footer>
+</body>
+</html>
