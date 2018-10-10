@@ -1,0 +1,75 @@
+body{
+	font-size: 16px;
+}
+h4{
+	font-size:20px;
+	color: #FE9B00;
+	
+	text-align: center;
+	margin:53px 0 40px;
+}
+.payment_contant{
+	width:1200px;
+height:450px;
+background:rgba(255,255,255,1);
+border-radius:4px;
+margin: auto;
+}
+.payment_contant_center h3{
+	font-weight:200;
+}
+.payment_contant_center{
+	margin:0 50px 50px;
+	padding-top:12px;
+	color: #999;
+}
+.payment_contant_center p{
+	padding-bottom:20px;
+	padding-top:12px;
+}
+.payment_contant_doctor span{
+	margin-right: 60px;
+}
+.payment_contant_doctor span small{
+	color: #333;
+	font-size: 16px;
+	font-weight: 600;
+}
+.payment_contant_center table td,.payment_contant_center table th{
+	     height: 55px;
+        border:1px solid #E2E2E2;
+        font-weight:200;
+        text-align: center;
+}
+.payment_contant_center table td{
+color: #333;
+font-weight: 600;
+}
+.payment_contant_center table{
+	width: 1100px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.payment_see{
+padding-top: 20px;
+}
+.payment_contant_foot img{
+	cursor: pointer;
+	margin-right: 40px;
+	border:1px solid #c8c8c8;
+}
+.payment_way{
+	opacity: .5;
+	cursor:text !important;
+}
+.payment_but{
+	text-align: center;
+}
+.payment_but button{
+	width:200px;
+height:60px;
+background:rgba(22,169,246,1);
+border-radius:4px;
+margin:60px 0;
+color: #fff;
+}

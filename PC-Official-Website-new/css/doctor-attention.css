@@ -1,0 +1,32 @@
+.doctorAll_doctorList ul{
+		padding-top: 0;
+}
+.doctorAll_doctorList{
+	width: 930px;
+
+	margin-top:0;
+}
+
+.doctorAll_doctorList{
+
+	display: block;
+}
+
+.doctorList li:nth-child(4n+1){
+	margin-left:36px;
+}.doctorList li:nth-child(3n+1){
+	margin-left:0;
+}
+.doctorCenter_right .doctorList li {
+	position: relative;
+
+}
+.doctorList li span img{
+	display: none;
+position: absolute;
+top: 0;
+right: 0;
+}
+.doctorManage_right_top span:nth-child(1){
+	cursor: auto;
+}

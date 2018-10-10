@@ -1,0 +1,38 @@
+.pagination{
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+    line-height: 36px;
+}
+.pagination>li{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border: #e2e2e2 1px solid;
+    border-radius: 4px;
+    background-color: #fafafa;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: #999999;
+    vertical-align: center;
+}
+.pagination>li.chosen{
+    background-color: #079BF1;
+    border: #079BF1 1px solid;
+    color: #ffffff;
+}
+.pagination>li:first-child{
+    background-image: url('../images/gray-arrow-left.png');
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pagination>li:last-child{
+    background-image: url('../images/gray-arrow-right.png');
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+}

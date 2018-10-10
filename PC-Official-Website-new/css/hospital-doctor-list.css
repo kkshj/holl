@@ -1,0 +1,121 @@
+.crumbs{
+    height: 40px;
+    line-height: 40px;
+    background-color: #16A9F6;
+    color: #ffffff;
+    font-size: 14px;
+}
+.crumbs a{
+    color: inherit;
+}
+
+.date{
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.date .date-type{
+    color: #8C919B;
+}
+.date ul{
+    width: 1050px;
+}
+.date ul>li{
+    height: 20px;
+    line-height: 20px;
+    padding: 0 6px;
+    font-size: 14px;
+    color: #666666;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.date ul>li.chosen{
+    background-color: #16A9F6;
+    color: #ffffff;
+}
+.date ul>li.chosen:first-child{
+    background-color: #99A0AA;
+}
+
+.doctor-list{
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.doctor-list li{
+    width: 240px;
+    height: 330px;
+    border: #e2e2e2 1px solid;
+    border-radius: 4px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.doctor-list li:nth-child(4n){
+    margin-right: 0;
+}
+.doctor-list li>*{
+    display: block;
+}
+.doctor-list li>img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 20px auto 15px;
+}
+.doctor-list li>span{
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    margin-top: 10px;
+}
+.doctor-list li>.doctor-info{
+    font-size: 16px;
+    color: #333333;
+}
+.doctor-list li>p{
+    width: 200px;
+    margin: 20px auto;
+    font-size: 12px;
+    color: #8B919B;
+}
+.doctor-list li>div{
+    width: 200px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+.doctor-list li>div>.count{
+    color: #666666;
+}
+.doctor-list li>div>.right{
+    color: #16A9F6;
+}
+
+.demo-class .layui-layer-content{
+    text-align: center;
+    color: #666;
+    font-size: 20px;
+ line-height: 170px;
+}
+.demo-class .layui-layer-btn1{
+width:100px;
+height:40px;
+line-height: 40px;
+font-size:20px;
+
+}
+.demo-class .layui-layer-btn0{
+margin-right: 50px;
+width:100px;
+height:40px;
+line-height: 40px;
+font-size:20px;
+color: #999;
+}

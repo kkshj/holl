@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/red-dragon-development.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header-class.css">
+    <link rel="stylesheet" href="css/footer-class.css">
+    <link rel="stylesheet" href="css/pagination-class.css">
+    <link rel="stylesheet" href="css/hospital-list.css">
+    <link rel="stylesheet" href="css/doctor-center.css">
+    <link rel="stylesheet" href="css/doctor-list.css">
+    <link rel="stylesheet" href="css/doctor-health.css">
+    <link rel="stylesheet" href="css/hospital-doctor-list.css">
+    <link rel="stylesheet" href="css/doctor-all-list.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/hospital-doctor-list.js"></script>
+    <script type="text/javascript" src="js/hospital-list.js"></script>
+    <script type="text/javascript" src="js/hospital-payment.js"></script>
+</head>
+
+<body>
+    <header>
+        <iframe src="header.html" width="100%" height="140" scrolling="no" frameborder="0" id='childframe20' name='childframe20'></iframe>
+    </header>
+    <nav class="crumbs">
+        <div class="container">当前位置：<a href="">首页</a>><a href="">医院列表</a>>内科</div>
+    </nav>
+    <div class="doctorAll">
+        <div class="doctorCenter_right_top  doctorAll_top">
+        <a href="" title="">  <span class="doctorAll_top_all">相关医院</span></a>
+        
+              <a href="" title=""> <span>相关医生</span></a>
+        </div>
+        <div class="doctor_container_right">
+            <div class="container sort container_sort">
+                <div class="container">
+                    <span class="left sort-type">所在地&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <ul class="right">
+                        <li class="left chosen" onclick="choseLocation1(this)">不限</li>
+                        <li class="left" onclick="choseLocation1(this)">成都</li>
+                        <li class="left" onclick="choseLocation1(this)">绵阳</li>
+                        <li class="left" onclick="choseLocation1(this)">德阳</li>
+                        <li class="left" onclick="choseLocation1(this)">资阳</li>
+                        <li class="left" onclick="choseLocation1(this)">宜宾</li>
+                        <li class="left" onclick="choseLocation1(this)">泸州</li>
+                        <li class="left" onclick="choseLocation1(this)">内江</li>
+                        <li class="left" onclick="choseLocation1(this)">达州</li>
+                        <li class="left" onclick="choseLocation1(this)">广安</li>
+                        <li class="left" onclick="choseLocation1(this)">眉山</li>
+                        <li class="left" onclick="choseLocation1(this)">南充</li>
+                        <li class="left" onclick="choseLocation1(this)">雅安</li>
+                        <li class="left" onclick="choseLocation1(this)">乐山</li>
+                        <li class="left" onclick="choseLocation1(this)">遂宁</li>
+                        <li class="left" onclick="choseLocation1(this)">巴中</li>
+                        <li class="left" onclick="choseLocation1(this)">广元</li>
+                        <li class="left" onclick="choseLocation1(this)">攀枝花</li>
+                        <li class="left" onclick="choseLocation1(this)">自贡</li>
+                        <li class="left" onclick="choseLocation1(this)">阿坝州</li>
+                        <li class="left" onclick="choseLocation1(this)">甘孜州</li>
+                        <li class="left" onclick="choseLocation1(this)">凉山州</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <span class="left sort-type">级&nbsp;&nbsp;&nbsp;&nbsp;别&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <ul class="right">
+                        <li class="left chosen" onclick="choseGrade1(this)">不限</li>
+                        <li class="left" onclick="choseGrade1(this)">三级甲等</li>
+                        <li class="left" onclick="choseGrade1(this)">三级医院</li>
+                        <li class="left" onclick="choseGrade1(this)">二级医院</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <span class="left sort-type">类&nbsp;&nbsp;&nbsp;&nbsp;型&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <ul class="right">
+                        <li class="left chosen" onclick="choseType1(this)">不限</li>
+                        <li class="left" onclick="choseType1(this)">外科 </li>
+                        <li class="left" onclick="choseType1(this)">妇产科</li>
+                        <li class="left" onclick="choseType1(this)">儿科</li>
+                        <li class="left" onclick="choseType1(this)">精神心理科</li>
+                        <li class="left" onclick="choseType1(this)">传染科</li>
+                        <li class="left" onclick="choseType1(this)">肿瘤科</li>
+                        <li class="left" onclick="choseType1(this)">皮肤性病科</li>
+                        <li class="left" onclick="choseType1(this)">麻醉医学科</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container hospital-list doctorSearch_foot_doctor">
+                <ul class="container list">
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                   
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                    <li class="left">
+                        <a href="">
+                        <img class="left" src="images/mock-hostpital-image.png">
+                        <div class="right doctor_right">
+                            <span>四川大学华西医院&nbsp;&nbsp;<span>三级甲等</span></span>
+                            <span>
+                                <small>神经内科</small>
+                                <small>心血管内科</small>
+                                <small>呼吸内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>呼吸内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+                                <small>神经内科</small>
+
+                            </span>
+                            
+                            <div>
+                               
+                                <span>13542已预约</span>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <div class='doctorList_page'>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">...</a>
+                <a href="">14</a>
+                <a href="">15</a>
+                <a href="">></a>
+            </div>
+        </div>
+  
+    </div>
+    <footer>
+        <p>Copyright@2013-2016 www.jkscw.com.cn 版权所有 蜀ICP备09023884号</p>
+        <p>技术支持：四川快医科技有限责任公司</p>
+    </footer>
+</body>
+<script>
+</script>
+
+</html>

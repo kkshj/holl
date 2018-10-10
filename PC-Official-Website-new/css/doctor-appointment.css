@@ -1,0 +1,127 @@
+.crumbs{
+    height: 40px;
+    line-height: 40px;
+    background-color: #16A9F6;
+    color: #ffffff;
+    font-size: 14px;
+}
+.crumbs a{
+    color: inherit;
+}
+
+.container .container{
+    width: 100%;
+}
+
+.doctor-main{
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 90px 50px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.doctor-info{
+    padding-bottom: 90px;
+    border-bottom: #E2E2E2 1px solid;
+}
+.doctor-info img{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 30px;
+}
+.doctor-info>div.left{
+    width: 500px;
+}
+.doctor-info>div.left>span{
+    display: block;
+}
+.doctor-info>div.left>span:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin: 10px 0;
+}
+.doctor-info>div.left>span:first-child>span{
+    font-size: 16px;
+    font-weight: normal;
+    color: #666666;
+}
+.doctor-info>div.left>span:nth-child(2){
+    font-size: 16px;
+    color: #666666;
+}
+.doctor-info>div.left>p{
+    font-size: 14px;
+    color: #8B919B;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+.doctor-info>div.left>span:last-child{
+    font-size: 14px;
+    color: #666666;
+}
+.doctor-info>div.left>span:last-child>span{
+    color: #16A9F6;
+}
+.doctor-info>button.right{
+    width: 80px;
+    height: 35px;
+    font-size: 16px;
+    color: #FE9B00;
+    border: #FE9B00 1px solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.appointment{
+    box-sizing: border-box;
+    padding: 60px 80px 0;
+}
+.appointment .title-bar{
+    font-size: 20px;
+    color: #666666;
+    margin-bottom: 30px;
+}
+.appointment .title-bar>span:first-child{
+    font-weight: bold;
+}
+.appointment .title-bar>span:last-child>span{
+    color: #16A9F6;
+}
+.table{
+    margin-bottom: 20px;
+}
+.table tr:hover td{
+    background-color: transparent !important;
+}
+.table tr{
+    height: 50px;
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+}
+.table th{
+    font-weight: normal;
+}
+.table th:first-child{
+    width: 100px;
+}
+.table td:first-child{
+    width: 100px;
+}
+.table td>span{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 30px;
+    border-radius: 4px;
+}
+.appoint{
+    background-color: #16A9F6;
+}
+.appointOut{
+    background-color: #C8C8C8;
+}

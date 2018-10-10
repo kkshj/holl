@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/red-dragon-development.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header-class.css">
+    <link rel="stylesheet" href="css/footer-class.css">
+    <link rel="stylesheet" href="css/pagination-class.css">
+    <link rel="stylesheet" href="css/hospital-list.css">
+    <link rel="stylesheet" href="css/doctor-center.css">
+    <link rel="stylesheet" href="css/doctor-list.css">
+    <link rel="stylesheet" href="css/doctor-health.css">
+    <link rel="stylesheet" href="css/hospital-doctor-list.css">
+    <link rel="stylesheet" href="css/doctor-all-list.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/hospital-doctor-list.js"></script>
+    <script type="text/javascript" src="js/hospital-list.js"></script>
+    <script type="text/javascript" src="js/hospital-payment.js"></script>
+</head>
+
+<body>
+    <header>
+        <iframe src="header.html" width="100%" height="140" scrolling="no" frameborder="0" id='childframe20' name='childframe20'></iframe>
+    </header>
+    <nav class="crumbs">
+        <div class="container">当前位置：<a href="">首页</a>><a href="">医院列表</a>>内科</div>
+    </nav>
+    <div class="doctorAll">
+        <div class="doctorCenter_right_top  doctorAll_top">
+            <a href="" title="">  <span>相关医院</span></a>
+        
+              <a href="" title=""> <span class="doctorAll_top_all">相关医生</span></a>
+     
+        </div>
+        
+        <div class="doctor_container_left">
+            <div class="container sort sort_top">
+                <div class="container">
+                    <span class="left sort-type">科室类型 &nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <ul class="right">
+                        <li class="left chosen" onclick="choseLocation(this)">不限</li>
+                        <li class="left" onclick="choseLocation(this)">外科 </li>
+                        <li class="left" onclick="choseLocation(this)">妇产科</li>
+                        <li class="left" onclick="choseLocation(this)">儿科</li>
+                        <li class="left" onclick="choseLocation(this)">精神心理科</li>
+                        <li class="left" onclick="choseLocation(this)">传染科</li>
+                        <li class="left" onclick="choseLocation(this)">肿瘤科</li>
+                        <li class="left" onclick="choseLocation(this)">皮肤性病科</li>
+                        <li class="left" onclick="choseLocation(this)">麻醉医学科</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <span class="left sort-type">所在地区 &nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <ul class="right">
+                        <li class="left chosen" onclick="choseGrade(this)">不限</li>
+                        <li class="left" onclick="choseGrade(this)">成都</li>
+                        <li class="left" onclick="choseGrade(this)">绵阳</li>
+                        <li class="left" onclick="choseGrade(this)">德阳</li>
+                        <li class="left" onclick="choseGrade(this)">资阳</li>
+                        <li class="left" onclick="choseGrade(this)">宜宾</li>
+                        <li class="left" onclick="choseGrade(this)">泸州</li>
+                        <li class="left" onclick="choseGrade(this)">内江</li>
+                        <li class="left" onclick="choseGrade(this)">达州</li>
+                        <li class="left" onclick="choseGrade(this)">广安</li>
+                        <li class="left" onclick="choseGrade(this)">眉山</li>
+                        <li class="left" onclick="choseGrade(this)">南充</li>
+                        <li class="left" onclick="choseGrade(this)">雅安</li>
+                        <li class="left" onclick="choseGrade(this)">乐山</li>
+                        <li class="left" onclick="choseGrade(this)">遂宁</li>
+                        <li class="left" onclick="choseGrade(this)">巴中</li>
+                        <li class="left" onclick="choseGrade(this)">广元</li>
+                        <li class="left" onclick="choseGrade(this)">攀枝花</li>
+                        <li class="left" onclick="choseGrade(this)">自贡</li>
+                        <li class="left" onclick="choseGrade(this)">阿坝州</li>
+                        <li class="left" onclick="choseGrade(this)">甘孜州</li>
+                        <li class="left" onclick="choseGrade(this)">凉山州</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <span class="left sort-type">预约日期 &nbsp;&nbsp;&nbsp;&nbsp;|</span>
+                    <ul class="right">
+                        <li class="left chosen" onclick="choseType(this)">不限</li>
+                        <li class="left" onclick="choseType(this)"> </li>
+                        <li class="left" onclick="choseType(this)">7/21周六</li>
+                        <li class="left" onclick="choseType(this)">7/22周日</li>
+                        <li class="left" onclick="choseType(this)">7/23周一</li>
+                        <li class="left" onclick="choseType(this)">7/24周二</li>
+                        <li class="left" onclick="choseType(this)">7/25周三</li>
+                        <li class="left" onclick="choseType(this)">7/26周四</li>
+                        <li class="left" onclick="choseType(this)">7/20周五</li>
+                        <li class="left" onclick="choseType(this)">7/28周六</li>
+                        <li class="left" onclick="choseType(this)">7/29周日</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="doctorList doctorAll_doctorList">
+                <ul>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                    <li>
+                        <div class="doctorList_introduce doctorAll_introduce">
+                            <p><img src="images/img-6.png"></p>
+                            <p>李威 &nbsp;&nbsp;&nbsp;主治医生</p>
+                            <p>水电费 打发士大夫</p>
+                            <p>水电费</p>
+                            <p>擅长：中医内科疾病，糖尿病慢性并发症；肿瘤手术后及放、化疗后中医中医内科疾病...</p>
+                            <p> <span>余号 236</span> <span>预约</span></p>
+                            <!-- <p><button>义诊</button></p> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class='doctorList_page'>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">...</a>
+                <a href="">14</a>
+                <a href="">15</a>
+                <a href="">></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright@2013-2016 www.jkscw.com.cn 版权所有 蜀ICP备09023884号</p>
+        <p>技术支持：四川快医科技有限责任公司</p>
+    </footer>
+</body>
+<script>
+</script>
+
+</html>

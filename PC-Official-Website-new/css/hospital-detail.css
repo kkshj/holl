@@ -1,0 +1,78 @@
+.crumbs{
+    height: 40px;
+    line-height: 40px;
+    background-color: #16A9F6;
+    color: #ffffff;
+    font-size: 14px;
+}
+.crumbs a{
+    color: inherit;
+}
+
+.hospital-info>div{
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+.hospital-info>div.left{
+    width: 100%;
+    padding: 50px;
+}
+.hospital-info>div.left img{
+    width: 320px;
+    height: 240px;
+    margin-right: 30px;
+}
+.hospital-info>div.left .container{
+    width: 100%;
+}
+.hospital-info>div.left .container>div.left{
+    width: 600px;
+    font-size: 14px;
+    color: #666666;
+}
+.hospital-info>div.left .container>div.left>div.row{
+    margin-bottom: 5px;
+}
+.hospital-info>div.left .container>div.left>div:first-child{
+    font-size: 20px;
+    color: #333333;
+    margin: 20px auto;
+    font-weight: bold;
+}
+.hospital-info>div.left .container>div.left label{
+    color: #99A0AA;
+}
+.hospital-info>div.left .container>div.left a{
+    color: #16A9F6;
+}
+.hospital-info>div.left .container>div.left>div:last-child{
+    color: #999999;
+    margin: 20px auto 0;
+}
+.hospital-info>div.left p{
+    font-size: 14px;
+    color: #99A0AA;
+    margin-top: 30px;
+    text-indent: 2em;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+.hospital-info>div.left p>a{
+    color: #16A9F6;
+}
+.hospital-info>div.right p{
+    box-sizing: border-box;
+    height: 440px;
+    overflow-y: scroll;
+    font-size: 14px;
+    color: #99A0AA;
+    padding: 10px 20px 30px
+}
+.hospital-info>div.right p>span{
+    display: block;
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 10px;
+}

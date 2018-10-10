@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/red-dragon-development.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header-class.css">
+    <link rel="stylesheet" href="css/footer-class.css">
+    <link rel="stylesheet" href="css/pagination-class.css">
+    <link rel="stylesheet" href="css/appointment.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/appointment.js"></script>
+    <script type="text/javascript" src="js/hospital-payment.js"></script>
+ <link rel="stylesheet" href="layui/css/layui.css">
+    <script type="text/javascript" src="layui/layui.all.js"></script>    
+</head>
+<body>
+<header>
+    <div class="top-info-bar">
+        <div class="container">
+            <span class="left">欢迎来到健康四川！</span>
+            <a href="#" class="left login-register-link">登录｜注册</a>
+            <span class="right">客服电话：400-1681120</span>
+        </div>
+    </div>
+    <div class="top-logo-search-bar">
+        <div class="container">
+            <img class="left" src="images/website-logo.png" alt="健康四川">
+            <i class="left"></i>
+            <div class="left company-info-text">
+                <span>四川省卫生和计划生育委员会监管</span>
+                <span>四川省卫生和计划生育信息中心主办</span>
+            </div>
+            <input type="text" class="left search-input" placeholder="搜索医院/科室/医生">
+            <button class="left search-button"></button>
+            <a href="" class="right download-app">
+                <img class="left" src="images/App-download.png">
+                <div class="left">
+                    <span>手机端下载</span>
+                    <span>更好体验在线问诊服务</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</header>
+<nav class="crumbs"><div class="container">当前位置：<a href="">首页</a>><a href="">医院列表</a>><a href="">四川大学华西医院</a>><a
+        href="">内科</a>><a href="">医生主页</a>>预约</div></nav>
+<div class="container doctor-info">
+    <span class="title">医生信息</span>
+    <table class="table border">
+        <thead>
+            <tr>
+                <th>医生</th>
+                <th>职称</th>
+                <th>医院</th>
+                <th>科室</th>
+                <th>预约时间</th>
+                <th>预约挂号费</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>郭晓光</td>
+                <td>副主任医生</td>
+                <td>四川省妇幼保健院(晋阳院区)</td>
+                <td>外科门诊</td>
+                <td>2018-08-05  上午</td>
+                <td>￥8.00</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container patient-info">
+    <div class="container title-bar">
+        <span class="left title">选择就诊人</span>
+        <button class="right btn-text" onclick="showPatientInfo()">+新增就诊人</button>
+    </div>
+    <ul class="container patients">
+        <li class="left radio">
+            <input type="radio" id="p1" name="patient">
+            <label for="p1">就诊人1</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p2" name="patient">
+            <label for="p2">就诊人2</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p3" name="patient">
+            <label for="p3">就诊人3</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p4" name="patient">
+            <label for="p4">就诊人4</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p5" name="patient">
+            <label for="p5">就诊人5</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p6" name="patient">
+            <label for="p6">就诊人6</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p7" name="patient">
+            <label for="p7">就诊人7</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p8" name="patient">
+            <label for="p8">就诊人8</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p9" name="patient">
+            <label for="p9">就诊人9</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p10" name="patient">
+            <label for="p10">就诊人10</label>
+        </li>
+        <li class="left radio">
+            <input type="radio" id="p11" name="patient">
+            <label for="p11">就诊人11</label>
+        </li>
+    </ul>
+    <table class="table border">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>身份证号</th>
+                <th>手机号</th>
+                <th>就诊卡号</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>谢腾飞</td>
+                <td>985634712015362840</td>
+                <td>13888005691</td>
+                <td><button class="btn-text" onclick="showPatientInfo(this)">添加就诊卡号</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<button class="appointment-button" type="button" onclick="">提交预约</button>
+<footer>
+    <p>Copyright@2013-2016 www.jkscw.com.cn 版权所有 蜀ICP备09023884号</p>
+    <p>技术支持：四川快医科技有限责任公司</p>
+</footer>
+<div class="dialog">
+    <form>
+        <span class="form-title">就诊人信息</span>
+        <div class="form-item"><label for="patientName">就诊人姓名</label><input class="appointmentDis" id="patientName" type="text" name="patientName"></div>
+        <div class="form-item"><label for="patientIdentity">身份证号码</label><input class="appointmentDis" id="patientIdentity" type="text" name="patientIdentity"></div>
+        <div class="form-item">
+            <label>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</label>
+            <div class="radio">
+                <input type="radio" id="patientGenderMale" name="patientGender" value="male" checked>
+                <label for="patientGenderMale">男</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="patientGenderFemale" name="patientGender" value="female">
+                <label for="patientGenderFemale">女</label>
+            </div>
+        </div>
+        <div class="form-item"><label for="patientPhoneNumber">手&nbsp;机&nbsp;号&nbsp;码</label><input class="appointmentDis" id="patientPhoneNumber" type="text" name="patientPhoneNumber"></div>
+        <div class="form-item"><label for="medicalServiceHospital">就&nbsp;诊&nbsp;医&nbsp;院</label><input id="medicalServiceHospital" list="medicalHospital" type="text" name="medicalServiceHospital" value=''>
+            <datalist id='medicalHospital'>
+                <option>四院</option>
+                <option >四川院</option>
+                <option>四川医</option>
+                <option >四院</option>
+                <option>四医院</option>
+                <option >四川医院</option>
+                <option>啊</option>
+                <option>四川医院</option>
+                <option>四川 医院</option>
+                <option>四是说的 川医院</option>
+                <option>四川院</option>
+                <option>四川院</option>
+                <option>四川院</option>
+                <option>四川院</option>
+                <option>四川院</option>
+                <option>四川院</option>
+               
+               
+            </datalist>
+        </div>
+        <div class="form-item"><label for="medicalServiceCard">就&nbsp;诊&nbsp;卡&nbsp;号</label><input id="medicalServiceCard" type="text" name="medicalServiceCard">
+        
+        </div>
+        <div class="form-item">
+            <button type="button" onclick="cancelEdit(this)">取消</button>
+            <button type="button" onclick="clinic()">确定</button>
+        </div>
+    </form>
+</div>
+
+</body>
+
+</html>

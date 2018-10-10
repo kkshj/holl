@@ -1,0 +1,164 @@
+.crumbs{
+    height: 40px;
+    line-height: 40px;
+    background-color: #16A9F6;
+    color: #ffffff;
+    font-size: 14px;
+}
+.crumbs a{
+    color: inherit;
+}
+
+.title{
+    display: block;
+    font-size: 20px;
+    color: #666666;
+}
+.container .container{
+    width: 100%;
+}
+.table{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.table th{
+    color: #999999;
+    font-weight: normal;
+}
+.table td{
+    color: #333333;
+}
+.table tr:hover td{
+    background-color: transparent !important;
+}
+
+body>.container{
+    padding: 50px 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.patient-info .btn-text{
+    color: #FE9B00;
+    font-size: 14px;
+    cursor: pointer;
+}
+.patient-info li.radio{
+    margin-right: 75px;
+    margin-top: 30px;
+    color: #333333;
+    font-size: 16px;
+    width: 100px;
+    line-height: 6px;
+}
+li.radio > label::before {
+    width: 16px;
+    height: 16px;
+    box-shadow: none;
+    background-clip: border-box;
+}
+li.radio > input[type="radio"]:checked + label::before {
+    border: none;
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-image: url("../images/checked-radio.png");
+    background-color: transparent;
+}
+.table td>.btn-text{
+    color: #16A9F6;
+    font-size: 16px;
+}
+.appointment-button{
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin: 50px auto 0;
+    border-radius: 4px;
+    background-color: #16A9F6;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.dialog form{
+    position: absolute;
+    width: 510px;
+    height: 530px;
+    left: 50%;
+    margin-left: -255px;
+    top: 50%;
+    margin-top: -265px;
+    background-color: #ffffff;
+}
+.dialog form .form-title{
+    display: block;
+    font-size: 20px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px auto;
+}
+.dialog .form-item{
+    width: 410px;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto 0;
+}
+.dialog .form-item:last-child{
+    text-align: center;
+}
+.dialog .form-item>label{
+    font-size: 16px;
+    color: #999999;
+    margin-right: 20px;
+}
+.dialog .form-item>input{
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    border: #e2e2e2 1px solid;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    outline: none !important;
+    color: #333333;
+}
+.dialog .form-item>.radio{
+    margin-right: 50px;
+    line-height: 4px;
+}
+.dialog .form-item>.radio>label::before {
+    width: 16px;
+    height: 16px;
+    box-shadow: none;
+}
+.dialog .form-item>button{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.dialog .form-item>button:first-child{
+    border: #e2e2e2 1px solid;
+    color: #999999;
+}
+.dialog .form-item>button:last-child{
+    background-color: #16A9F6;
+    color: #ffffff;
+    margin-left: 110px;
+}

@@ -1,0 +1,95 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top-info-bar{
+    font-size: 12px;
+    background-color: #F0F0F0;
+    height: 30px;
+    line-height: 30px;
+}
+.top-info-bar>.container>span{
+    color: #999999;
+}
+.login-register-link{
+    color: #0694E7;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.top-logo-search-bar{
+    height: 110px;
+    background-color: #ffffff;
+}
+.top-logo-search-bar>.container>img{
+    width: 210px;
+    height: 80px;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+.top-logo-search-bar>.container>i{
+    width: 1px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 30px;
+    background-color: #16A9F6;
+}
+.company-info-text{
+    font-size: 14px;
+    color: #999999;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+.company-info-text>span{
+    display: block;
+    text-align: center;
+}
+.company-info-text>span:first-child{
+    letter-spacing: 1px;
+}
+.search-input{
+    width: 280px;
+    height: 40px;
+    margin-left: 75px;
+    margin-top: 30px;
+    border: #E2E2E2 1px solid;
+    border-radius: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.search-button{
+    width: 80px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 30px;
+    background-image: url('../images/serch-background.png');
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+    background-color: #079BF1;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.download-app{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.download-app>img{
+    width: 44px;
+    height: 44px;
+}
+.download-app>div.left>span{
+    display: block;
+}
+.download-app>div.left>span:first-child{
+    font-size: 16px;
+    color: #333333;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.download-app>div.left>span:last-child{
+    font-size: 12px;
+    color: #999999;
+}

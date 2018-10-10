@@ -1,0 +1,98 @@
+.doctorRoom{
+	width:1200px;
+height:860px;
+background:rgba(255,255,255,1);
+border-radius:4px;
+}
+.doctorHealth_top{
+	width:1200px;
+height:80px;
+background:rgba(255,255,255,1);
+border-radius:4px;
+margin:24px auto;
+
+}
+.doctorHealth_top li{
+	color: #999;
+	line-height: 80px;
+	padding-left: 28px;
+}
+.doctor_room{
+	width: 430px;
+	height: 90px;
+	margin-bottom: 40px;
+	cursor: pointer;
+}
+.doctor_room ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+.doctor_room li:nth-child(1){
+	width: 160px;
+	height: 90px;
+	position: relative;
+
+}
+.doctor_room li:nth-child(1) span{
+	position: relative;
+	bottom:26px;
+	color: #fff;
+	font-size: 12px;
+}
+.doctor_room li:nth-child(1) img:nth-child(1){
+	width: 100%;
+	height: 90px;
+}
+.doctor_room li:nth-child(1) img:nth-child(2){
+	width: 40px;height: 40px;
+position: absolute;
+top:30%;
+left: 38%;
+
+}
+.doctor_room li:nth-child(2) p{
+	width: 230px;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #999;
+font-size: 12px;
+padding-bottom: 10px;
+}
+.doctor_room li:nth-child(2) p:nth-child(1){
+	color: #666;
+	font-size: 16px;
+
+}
+.doctor_room li:nth-child(2) p:nth-child(2){
+	width: 250px;
+}
+.doctor_spring{
+	display: none;
+	width: 100%;
+	height: 100%;
+position: fixed;
+	top: 0;
+	background:rgba(0,0,0,.9);
+}
+.doctor_spring_contant{
+		cursor: pointer;
+position:absolute;
+top:50%;
+left:50%;
+margin-left: -400px;
+margin-top: -250px;
+
+}
+.doctor_spring_contant img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 30px;
+	right:20px;
+	z-index: 2;
+
+}

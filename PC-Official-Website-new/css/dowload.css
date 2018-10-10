@@ -1,0 +1,24 @@
+.fileDownload {
+	margin:20px auto;
+	overflow: auto;
+    width: 1200px;
+    height: 500px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+}
+.fileDownload ul{
+	padding: 40px 50px;
+}
+.fileDownload p {
+	padding-left: 50px;
+	padding-top: 40px;
+    color: #666;
+    font-size: 20px;
+}
+.fileDownload li{
+	margin-bottom: 20px;
+	color: #8C919B;
+	font-size: 14px;
+	cursor: pointer;
+
+}

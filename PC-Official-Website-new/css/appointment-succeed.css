@@ -1,0 +1,74 @@
+.appointment_succeed{
+
+	width: 340px;
+	
+	margin:77px auto 0;
+}
+.appointment_succeed p{
+	text-align: center;
+}
+.appointment_succeed p:nth-child(2){
+	font-size: 24px;
+	color: #333;
+	padding-bottom:27px;
+}
+.appointment_succeed p:nth-child(3){
+	font-size: 16px;
+	color: #999;
+}
+.appointment_succeed p:nth-child(3) span{
+	color: #16A9F6;
+}
+.appointment_succeed p:nth-child(3) u{
+	color: #666;
+	cursor:pointer;
+}
+
+.appointment_failed{
+
+	width: 340px;
+	
+	margin:77px auto 0;
+}
+.appointment_failed p{
+
+	text-align: center;
+}
+.appointment_failed p:nth-child(2){
+	font-size: 24px;
+	color: #333;
+	padding-bottom:18px;
+	
+}
+.appointment_failed p:nth-child(3){
+	font-size: 16px;
+	color: #333;
+	padding-bottom:60px;
+	
+}
+.appointment_failed p:nth-child(4){
+color: #666;
+}
+.appointment_failed p:nth-child(4) span{
+	color: #16A9F6;
+}
+.appointment_routine{
+width: 424px;
+	
+	margin:77px auto 0;	
+}
+.appointment_routine p{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.appointment_routine p:nth-child(3),
+.appointment_routine p:nth-child(2){
+	font-size: 15px;
+	color: #16A9F6;
+}
+
+.appointment_routine p:nth-child(1) img{
+	width: 180px;
+	height: 180px;
+	
+}

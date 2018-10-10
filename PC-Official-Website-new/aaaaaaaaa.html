@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+  
+</head>
+<style>
+.css1 {
+    color: #6699ff;
+    border: 1px #ff8000 dashed;
+    margin-bottom: 20px;
+    width: 20em;
+    /*不允许出现半汉字截断*/
+}
+
+.css2 {
+    overflow: hidden;
+    /*自动隐藏文字*/
+    text-overflow: ellipsis;
+    /*文字隐藏后添加省略号*/
+    white-space: nowrap;
+    /*强制不换行*/
+    width: 20em;
+    /*不允许出现半汉字截断*/
+    color: #6699ff;
+    border: 1px #ff8000 dashed;
+}
+
+span {
+    display: inline-block;
+    width: 60px;
+    /*height: 30px;*/
+    border: 1px solid;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+span:hover {
+    overflow: visible;
+}
+.css2:hover{
+  overflow: visible;
+}
+</style>
+
+<body>
+    <div class="css1">欢迎来到点点滴滴的博客进行技术切磋</div>
+    <div class="css2">欢迎来到点点滴滴的博客进行技术切磋欢迎来到点点滴滴的博客进行技术切磋
+        </div>
+            <span>  
+              文字溢出效果显示与隐藏的测试
+         </span>
+</body>
+
+</html>
