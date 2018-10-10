@@ -1,0 +1,23 @@
+.footer *{
+    text-align: center;
+    font-size: 14px;
+    color: #999999;
+}
+
+
+.footer{
+    background-color: transparent;
+    padding:20px 0 20px;
+}
+.footer p{
+    margin-bottom: 20px;
+}
+.footer p:nth-child(1){
+    margin-top: 10px;
+}
+.footer p:nth-child(2) img{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 8px;
+}

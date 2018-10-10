@@ -1,0 +1,29 @@
+.clause{
+	width:1080px;
+height:880px;
+background:rgba(255,255,255,1);
+border-radius:4px;
+margin:20px auto;
+overflow: auto;
+padding:30px 60px;
+
+}
+.clause p:nth-child(1){
+	text-align: center;
+	font-size: 20px;
+	color: #666;
+	padding-bottom: 20px;
+}
+.clause p:nth-child(2){
+	color: #8C919B;
+	font-size: 12px;
+}
+.aboutUs{
+display: none;
+}
+.copyright{
+display: none;
+}
+.register{
+	display: none;
+}

@@ -1,0 +1,97 @@
+body{
+	font-size: 16px;
+}
+.doctorHealth{
+	width:1200px;
+height:80px;
+background:rgba(255,255,255,1);
+border-radius:4px;
+margin:24px auto;
+
+}
+.doctorHealth ul{
+	display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.doctorHealth li{
+	cursor: pointer;
+color: #999;
+	margin-left: 50px;
+	padding: 27px 0 28px;
+	border-bottom: 2px solid #fff;
+
+}
+.doctorHealth li:hover{
+border-bottom:2px solid #16A9F6;
+	color: #333;
+}
+.doctorHealth_content{
+	width:1200px;
+height:1000px;
+background:rgba(255,255,255,1);
+border-radius:4px;
+margin: auto;
+}
+.doctorHealth_content ul{
+	margin:0 50px;
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.doctorHealth_list{
+	width: 480px;
+	height: 120px;
+	cursor: pointer;
+		margin-bottom: 40px;
+
+}
+.doctorHealth_list ul{
+	margin: 0;
+	padding: 0;
+		display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.doctorHealth_list li img{
+	width: 120px;
+	height: 120px;
+}
+.doctorHealth_list li:nth-child(2) p{
+	width: 337px;
+
+
+}
+.doctorHealth_list li:nth-child(2) p:nth-child(1){
+color: #333;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-bottom: 10px;
+	
+
+}
+.doctorHealth_list li:nth-child(2) p:nth-child(2){
+ color: #999;
+width:343px;
+margin-bottom: 10px;
+font-size:12px;
+
+	overflow : hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+
+
+}
+.doctorHealth_list li:nth-child(2) p:nth-child(3){
+	 color: #999;
+
+font-size:12px;
+text-align: right;
+}

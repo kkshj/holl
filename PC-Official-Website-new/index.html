@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/red-dragon-development.css">
+    <!-- <link rel="stylesheet" href="css/basic.css"> -->
+    
+ 
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+ <iframe src="header.html" width="100%" height="140" scrolling="no" frameborder="0"></iframe>
+    <nav class="top-navigator">
+        <div class="container">
+            <div class="left background-shadow"></div>
+            <ul class="left">
+                <li class="left"><a href="#">预约挂号</a></li>
+                <li class="left"><a href="#">扶贫资讯</a></li>
+                <li class="left"><a href="#">健康资讯</a></li>
+                <li class="left"><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="appointment-register">
+            <span class="title">预约挂号</span>
+            <div class="quick-appointment">
+                <div class="container position">
+                    <span class="left" onclick="aa()">当前位置：成都</span>
+                    <span class="right" onclick="changeCity()">[切换]</span>
+                </div>
+                <input class="select-information" type="text" list="hospital-list" placeholder="医院" onchange="clickChange(1)">
+                <datalist id="hospital-list">
+                    <option id="1">医院数据1</option>
+                    <option id="2">医院数据2</option>
+                    <option id="3">医院数据3</option>
+                    <option id="4">医院数据4</option>
+                </datalist>
+                <script type="text/javascript">
+                var Id1,Id2
+
+                function clickChange(num) {
+                    if (num == 1) {
+                        var arr = $('#hospital-list').children()
+
+                        for (var i = arr.length - 1; i >= 0; i--) {
+
+                            if (arr.eq(i).val() == $('.select-information').val().trim()) {
+
+                                Id1 = arr.eq(i).attr('id')
+                            }
+
+                        }
+                        console.log(Id1)
+                        return Id1
+                    } else if (num == 2) {
+                       
+                        var arr = $('#department-list').children()
+
+                        for (var i = arr.length - 1; i >= 0; i--) {
+                            
+                            if (arr.eq(i).val() == $('#select_information').val().trim()) {
+                               
+                                Id2 = arr.eq(i).attr('id')
+                            }
+
+                        }
+                        console.log(Id2)
+                        return Id2
+                    }
+
+                }
+
+                function aa() {
+                    console.log(clickChange(1))
+                    console.log(Id2)
+                    console.log($('.select-information').val())
+
+
+                }
+                </script>
+                <input class="select-information" id='select_information' type="text" list="department-list" placeholder="科室" onchange="clickChange(2)">
+                <datalist id="department-list">
+                    <option id="7">科室数据1</option>
+                    <option id='8'>科室数据2</option>
+                    <option id='9'>科室数据3</option>
+                    <option id='10'>科室数据4</option>
+                </datalist>
+                <button class="quick-appointment-button">快速预约</button>
+                <button class="register-notice" onclick="showNotice()">挂号须知</button>
+                <div class="city">
+                    <ul class="container">
+                        <li class="left" onclick="choseCity(this)">成都</li>
+                        <li class="left" onclick="choseCity(this)">绵阳</li>
+                        <li class="left" onclick="choseCity(this)">德阳</li>
+                        <li class="left" onclick="choseCity(this)">资阳</li>
+                        <li class="left" onclick="choseCity(this)">宜宾</li>
+                        <li class="left" onclick="choseCity(this)">泸州</li>
+                        <li class="left" onclick="choseCity(this)">内江</li>
+                        <li class="left" onclick="choseCity(this)">达州</li>
+                        <li class="left" onclick="choseCity(this)">广安</li>
+                        <li class="left" onclick="choseCity(this)">眉山</li>
+                        <li class="left" onclick="choseCity(this)">南充</li>
+                        <li class="left" onclick="choseCity(this)">雅安</li>
+                        <li class="left" onclick="choseCity(this)">乐山</li>
+                        <li class="left" onclick="choseCity(this)">遂宁</li>
+                        <li class="left" onclick="choseCity(this)">巴中</li>
+                        <li class="left" onclick="choseCity(this)">广元</li>
+                        <li class="left" onclick="choseCity(this)">攀枝花</li>
+                        <li class="left" onclick="choseCity(this)">自贡</li>
+                        <li class="left" onclick="choseCity(this)">阿坝州</li>
+                        <li class="left" onclick="choseCity(this)">甘孜州</li>
+                        <li class="left" onclick="choseCity(this)">凉山州</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="mini-title">热门科室</span>
+            <ul class="container department-hot">
+                <li class="left"><a href="">科室数据</a></li>
+                <li class="left"><a href="">科室数据</a></li>
+                <li class="left"><a href="">科室数据</a></li>
+                <li class="left"><a href="">科室数据</a></li>
+                <li class="left"><a href="">科室数据</a></li>
+                <li class="left"><a href="">科室数据</a></li>
+                <li class="left"><a href="">科室数据</a></li>
+                <li class="left"><a href="">科室数据</a></li>
+                <li class="left"><a href="">其他</a></li>
+            </ul>
+            <div class="notice">
+                <span>挂号须知</span>
+                <p>
+                    1. 预约挂号按国家要求必须实名制挂号。否则到医院将无法取号。
+                    <br/> 2. 预约挂号费由医院放号时自行设定，平台不收取任何额外费用。
+                    <br/> 3. 预约时未支付的医院挂号费，需在就医当天去医院取号时支付。
+                    <br/> 4. 部分医院挂号需要提供该院的就诊卡，如果没有请先到医院办理。
+                    <br/> 5. 预约成功后，平台会通过短信提醒你，请按短信内容去医院就诊。
+                    <br/> 6. 未就诊请主动退号，否则平台按爽约处理后可能影响今后挂号。
+                    <br/> 注：更多规则将详看挂号时的医院预约规则。
+                </p>
+                <button onclick="hideNotice()">我已知晓</button>
+            </div>
+        </div>
+    </div>
+    <div class="container banner-advertisement">
+        <div class="right">
+            <div class="banner" onmouseenter="stopScroll()" onmouseleave="bannerScroll()">
+                <ul class="container">
+                    <li data-idx="1" class="left"><a href=""><img src="images/banner.jpg"></a></li>
+                    <li data-idx="2" class="left"><a href=""><img src="images/banner.jpg"></a></li>
+                    <li data-idx="3" class="left"><a href=""><img src="images/banner.jpg"></a></li>
+                </ul>
+                <ul></ul>
+            </div>
+            <div class="advertisement"><a href=""><img src="images/advertisement.png" alt=""></a></div>
+        </div>
+    </div>
+    <div class="container hospital-register">
+        <span class="title">按医院挂号</span>
+        <ul class="left">
+            <li class="left">
+                <a class="city-data" href="">城市数据</a>
+                <ul>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                </ul>
+            </li>
+            <li class="left">
+                <a class="city-data" href="">城市数据</a>
+                <ul>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                </ul>
+            </li>
+            <li class="left">
+                <a class="city-data" href="">城市数据</a>
+                <ul>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                </ul>
+            </li>
+            <li class="left">
+                <a class="city-data" href="">城市数据</a>
+                <ul>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                </ul>
+            </li>
+            <li class="left">
+                <a class="city-data" href="">城市数据</a>
+                <ul>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                </ul>
+            </li>
+            <li class="left">
+                <a class="city-data" href="">城市数据</a>
+                <ul>
+                    <li><a href="">医院数据医院数据医院数据医院数据医院数据医院数据医院数据医院数据医院数据医院数据医院数据医院数据医院数据医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                </ul>
+            </li>
+            <li class="left">
+                <a class="city-data" href="">城市数据</a>
+                <ul>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                </ul>
+            </li>
+            <li class="left">
+                <a class="city-data" href="">城市数据</a>
+                <ul>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                    <li><a href="">医院数据</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="left">
+            <span class="mini-title">其它市/州</span>
+            <ul class="container">
+                <li class="left"><a href="">城市数据</a></li>
+                <li class="left"><a href="">城市数据</a></li>
+                <li class="left"><a href="">城市数据</a></li>
+                <li class="left"><a href="">城市数据</a></li>
+                <li class="left"><a href="">城市数据</a></li>
+                <li class="left"><a href="">城市数据</a></li>
+                <li class="left"><a href="">城市数据</a></li>
+                <li class="left"><a href="">城市数据</a></li>
+                <li class="left"><a href="">城市数据</a></li>
+                <li class="left"><a href="">城市数据</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container poverty-alleviation">
+        <span class="title">扶贫资讯</span>
+        <ul class="container">
+            <li class="left">
+                <a href="">
+                    <img class="left" src="images/mock-image.jpg" alt="">
+                    <div class="right">
+                        <span>健康四川互联网医院：等来了国务院的一锤定音</span>
+                        <p>2018年5月4日，五四青年节，在香港联交所，互联网医疗第一股平安好医生（01833.HK）挂牌上市，开盘价报57.30港元，较发行价上涨4.6%，市值一度超过...</p>
+                        <p>2018-08-17</p>
+                    </div>
+                </a>
+            </li>
+            <li class="left">
+                <a href="">
+                    <img class="left" src="images/mock-image.jpg" alt="">
+                    <div class="right">
+                        <span>健康四川互联网医院：等来了国务院的一锤定音</span>
+                        <p>2018年5月4日，五四青年节，在香港联交所，互联网医疗第一股平安好医生（01833.HK）挂牌上市，开盘价报57.30港元，较发行价上涨4.6%，市值一度超过...</p>
+                        <p>2018-08-17</p>
+                    </div>
+                </a>
+            </li>
+            <li class="left">
+                <a href="">
+                    <img class="left" src="images/mock-image.jpg" alt="">
+                    <div class="right">
+                        <span>健康四川互联网医院：等来了国务院的一锤定音</span>
+                        <p>2018年5月4日，五四青年节，在香港联交所，互联网医疗第一股平安好医生（01833.HK）挂牌上市，开盘价报57.30港元，较发行价上涨4.6%，市值一度超过...</p>
+                        <p>2018-08-17</p>
+                    </div>
+                </a>
+            </li>
+            <li class="left">
+                <a href="">
+                    <img class="left" src="images/mock-image.jpg" alt="">
+                    <div class="right">
+                        <span>健康四川互联网医院：等来了国务院的一锤定音</span>
+                        <p>2018年5月4日，五四青年节，在香港联交所，互联网医疗第一股平安好医生（01833.HK）挂牌上市，开盘价报57.30港元，较发行价上涨4.6%，市值一度超过...</p>
+                        <p>2018-08-17</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <span class="mini-title">扶贫医生</span>
+        <div class="poverty-alleviation-doctor">
+            <ul class="container">
+                <li class="left">
+                    <img class="left" src="images/mock-image.jpg">
+                    <div class="left">
+                        <span>李薇&nbsp;&nbsp;&nbsp;&nbsp;主任医师</span>
+                        <span>西南医科大学附属医院</span>
+                        <span>儿童保健科</span>
+                    </div>
+                </li>
+                <li class="left">
+                    <img class="left" src="images/mock-image.jpg">
+                    <div class="left">
+                        <span>李薇&nbsp;&nbsp;&nbsp;&nbsp;主任医师</span>
+                        <span>西南医科大学附属医院</span>
+                        <span>儿童保健科</span>
+                    </div>
+                </li>
+                <li class="left">
+                    <img class="left" src="images/mock-image.jpg">
+                    <div class="left">
+                        <span>李薇&nbsp;&nbsp;&nbsp;&nbsp;主任医师</span>
+                        <span>西南医科大学附属医院</span>
+                        <span>儿童保健科</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container healthy-info">
+        <span class="title">健康资讯</span>
+        <i class="part-line"></i>
+        <ul>
+            <li class="left hot-info">
+                <span class="mini-title">热点资讯</span>
+                <div class="container">
+                    <a href="">
+                        <img class="left" src="images/mock-image.jpg" alt="">
+                        <div class="right">
+                            <span>健康四川互联网医院：等来了国务院的一锤定音</span>
+                            <p>2018年5月4日，五四青年节，在香港联交所，互联网医疗第一股平安好医生（01833.HK）挂牌上市，开盘价报57.30港元，较发行价上涨4.6%，市值一度超过...</p>
+                            <p>2018-08-17</p>
+                        </div>
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="left"></i>
+                            <span class="left">地震十年，关爱健康义诊周</span>
+                            <span class="right">2018-05-12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="left"></i>
+                            <span class="left">地震十年，关爱健康义诊周</span>
+                            <span class="right">2018-05-12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="left"></i>
+                            <span class="left">地震十年，关爱健康义诊周</span>
+                            <span class="right">2018-05-12</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="left"></i>
+                            <span class="left">地震十年，关爱健康义诊周</span>
+                            <span class="right">2018-05-12</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="left healthy">
+                <span class="mini-title">健康专题</span>
+                <div class="container">
+                    <a href="">
+                        <img class="left" src="images/mock-image.jpg" alt="">
+                        <div class="right">
+                            <span>健康四川互联网医院：等来了国务院的一锤定音</span>
+                            <p>2018年5月4日，五四青年节，在香港联交所，互联网医疗第一股平安好医生（01833.HK）挂牌上市，开盘价报57.30港元，较发行价上涨4.6%，市值一度超过...</p>
+                            <p>2018-08-17</p>
+                        </div>
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <span class="left">
+                            <a href="">焦点透视</a>
+                             &nbsp;|&nbsp;
+                            <a href="">艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">移动医疗</a>
+                             &nbsp;|&nbsp;
+                            <a href="">艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">电子健康卡</a>
+                             &nbsp;|&nbsp;
+                            <a href="">艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">卫生计生日</a>
+                             &nbsp;|&nbsp;
+                            <a href="">快医科技、中科院绿色智能技术研究院艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="left healthy">
+                <span class="mini-title">健康知识</span>
+                <div class="container">
+                    <a href="">
+                        <img class="left" src="images/mock-image.jpg" alt="">
+                        <div class="right">
+                            <span>健康四川互联网医院：等来了国务院的一锤定音</span>
+                            <p>2018年5月4日，五四青年节，在香港联交所，互联网医疗第一股平安好医生（01833.HK）挂牌上市，开盘价报57.30港元，较发行价上涨4.6%，市值一度超过...</p>
+                            <p>2018-08-17</p>
+                        </div>
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <span class="left">
+                            <a href="">老年健康</a>
+                             &nbsp;|&nbsp;
+                            <a href="">艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">心理健康</a>
+                             &nbsp;|&nbsp;
+                            <a href="">艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">关爱女性</a>
+                             &nbsp;|&nbsp;
+                            <a href="">艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">饮食健康</a>
+                             &nbsp;|&nbsp;
+                            <a href="">快医科技、中科院绿色智能技术研究院艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">孕育知识</a>
+                             &nbsp;|&nbsp;
+                            <a href="">快医科技、中科院绿色智能技术研究院艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">儿童健康</a>
+                             &nbsp;|&nbsp;
+                            <a href="">快医科技、中科院绿色智能技术研究院艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">疾病防治</a>
+                             &nbsp;|&nbsp;
+                            <a href="">快医科技、中科院绿色智能技术研究院艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                    <li>
+                        <span class="left">
+                            <a href="">综合知识</a>
+                             &nbsp;|&nbsp;
+                            <a href="">快医科技、中科院绿色智能技术研究院艾滋抗病毒治疗“中国方案”获优化</a>
+                        </span>
+                        <span class="right">2018-05-12</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="left healthy-forum">
+                <span class="mini-title">健康讲堂</span>
+                <ul>
+                    <li class="container">
+                        <div class="left">
+                            <img src="images/mock-image.jpg" alt="">
+                            <span></span>
+                        </div>
+                        <div class="left">
+                            <span>艾滋病的发展趋势及危害</span>
+                            <span>讲师：四川省疾病控制中心</span>
+                            <span>直播时间：2018-06-25 13:00</span>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <div class="left">
+                            <img src="images/mock-image.jpg" alt="">
+                            <span></span>
+                        </div>
+                        <div class="left">
+                            <span>艾滋病的发展趋势及危害</span>
+                            <span>讲师：四川省疾病控制中心</span>
+                            <span>直播时间：2018-06-25 13:00</span>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <div class="left">
+                            <img src="images/mock-image.jpg" alt="">
+                            <span></span>
+                        </div>
+                        <div class="left">
+                            <span>艾滋病的发展趋势及危害</span>
+                            <span>讲师：四川省疾病控制中心</span>
+                            <span>直播时间：2018-06-25 13:00</span>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <div class="left">
+                            <img src="images/mock-image.jpg" alt="">
+                            <span></span>
+                        </div>
+                        <div class="left">
+                            <span>艾滋病的发展趋势及危害</span>
+                            <span>讲师：四川省疾病控制中心</span>
+                            <span>直播时间：2018-06-25 13:00</span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+  <div class="web-link">
+            <a href="free-clause.html?num=0">关于我们</a>&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="free-clause.html?num=1">版权声明</a>&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="free-clause.html?num=2">免责条款</a>&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="free-clause.html?num=3">注册协议</a>&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="dowload.html">下载专区</a>
+        </div>    
+    <iframe src="footer.html" width="100%" height="200" scrolling="no" frameborder="0"></iframe>
+</body>
+
+</html>

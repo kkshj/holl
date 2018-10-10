@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心就诊人管理</title>
+    <link rel="stylesheet" href="css/red-dragon-development.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header-class.css">
+    <link rel="stylesheet" href="css/footer-class.css">
+    <link rel="stylesheet" href="css/doctor-center.css">
+    <link rel="stylesheet" href="css/hospital-doctor-list.css">
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="css/doctor-center-manage.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/hospital-payment.js"></script> <script type="text/javascript" src="js/appointment.js"></script>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script type="text/javascript" src="layui/layui.all.js"></script>
+</head>
+
+<body>
+    <iframe src="header.html" width="100%" height="140" scrolling="no" frameborder="0"></iframe>
+    <nav class="crumbs">
+        <div class="container">当前位置：<a href="">首页</a>><a href="">个人中心</a>></div>
+    </nav>
+    <div class="doctorCenter">
+        <div class="doctorCenter_left">
+            <div class="doctorCenter_left_top">
+                <p><img src="images/img-6.png"></p>
+                <p>138***13388</p>
+                <p class="authentication">已认证</p>
+                <p class="un_authentication"><a href="" title="">未认证</a></p>
+            </div>
+            <div class="doctorCenter_left_foot">
+                <ul>
+                    <li><a href="">预约订单</a>
+                    </li>
+                    <li class="indent"><a href="" title="">就诊人管理</a></li>
+                    <li><a href="" title="">我的关注</a> </li>
+                    <li><a href="" title="">资料与账户</a><i class="layui-icon layui-icon-face-smile"></i> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="doctorCenter_right">
+            <div class="doctorCenter_right_top doctorManage_right_top">
+                <span>就诊人</span>
+                <span onclick='patientAdd()'>+ 添加就诊人</span>
+            </div>
+            <div class="doctorCenter_right_foot">
+                <table class="managetable">
+                    <tr>
+                        <th>默认</th>
+                        <th>名字</th>
+                        <th>性别</th>
+                        <th>年龄</th>
+                        <th>身份证号</th>
+                        <th>手机号</th>
+                        <th>就诊卡</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><small>13556362698</small><span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr class="interposition">
+                        <td colspan='8'>
+                            <div class="doctorManage_spring_rate">
+                                <ul>
+                                    <li><span>四川省中医医院</span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院</span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院 </span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院 </span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院 </span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院 </span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院 </span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院 </span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院 </span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院 </span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                    <li><span>四川省中医医院 </span><span>2531648952472545456</span><span onclick="deleteClick(this,2,4)">删除</span></li>
+                                </ul>
+                                <div class="doctorManage_spring_foot">
+                                    <span>请添加医院<img onclick="addition()" src="images/img-13.png"></span><span><input type="text" name="" placeholder="请输入就诊卡号"></span><span onclick="clickSpring(id)"><small>保存</small></span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>李静</td>
+                        <td>
+                            男
+                        </td>
+                        <td>10</td>
+                        <td>236514********2315</td>
+                        <td>
+                            <p><span>13556362698</span> <span onclick='amend(this)'>[修改]</span></p>
+                            <p>
+                                <input type="text" name="" value="4656456"> <span onclick='preserve(this)'>保存</span></p>
+                        </td>
+                        <td>6张<span onclick="pepoleManage(this)">[管理]</span></td>
+                        <td onclick="deleteClick(this,1,3)"><img src="images/img-12.png"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="dialog ">
+        <form>
+            <span class="form-title">就诊人信息</span>
+            <div class="form-item">
+                <label for="patientName">就诊人姓名</label>
+                <input id="patientName" type="text" name="patientName">
+            </div>
+            <div class="form-item">
+                <label for="patientIdentity">身份证号码</label>
+                <input id="patientIdentity" type="text" name="patientIdentity">
+            </div>
+            <div class="form-item">
+                <label>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别</label>
+                <div class="radio">
+                    <input type="radio" id="patientGenderMale" name="patientGender" value="male" checked>
+                    <label for="patientGenderMale">男</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" id="patientGenderFemale" name="patientGender" value="female">
+                    <label for="patientGenderFemale">女</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="patientPhoneNumber">手&nbsp;机&nbsp;号&nbsp;码</label>
+                <input id="patientPhoneNumber" type="text" name="patientPhoneNumber">
+            </div>
+            <div class="form-item">
+                <label for="medicalServiceHospital">就&nbsp;诊&nbsp;医&nbsp;院</label>
+                <input id="medicalServiceHospital" list="medicalHospital" type="text" name="medicalServiceHospital">
+                <datalist id='medicalHospital'>
+                    <option>啊</option>
+                    <option>四川医院</option>
+                    <option>四川医院</option>
+                    <option>四是说的 川医院</option>
+                    <option>四川医院</option>
+                    <option>四川的神色医院</option>
+                    <option>四川十分医院</option>
+                    <option>说的</option>
+                    <option>四川医院</option>
+                    <option>四辅导费川医院</option>
+                    <option>四川医院</option>
+                    <option>水电费</option>
+                    <option>水电费说的</option>
+                    <option>四川医院</option>
+                    <option>四川医院</option>
+                    <option>水电</option>
+                    <option>四川医院</option>
+                    <option>四川医院</option>
+                    <option>四川医院</option>
+                </datalist>
+            </div>
+            <div class="form-item">
+                <label for="medicalServiceCard">就&nbsp;诊&nbsp;卡&nbsp;号</label>
+                <input id="medicalServiceCard" type="text" name="medicalServiceCard">
+            </div>
+            <div class="form-item">
+                <button type="button" onclick="cancelEdit()">取消</button>
+                <button type="button" onclick="clinic()">确定</button>
+            </div>
+        </form>
+    </div>
+    <div class="addSpring">
+        <div class="addSpring_content">
+            <p>
+                <input oninput="inuptClick(this)" type="text" name="" placeholder="快速搜索医院">
+                <button><img src="images/serch-background.png"></button>
+            </p>
+            <ul>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li onclick='addSpring(this)'>四川大学华西医院</li>
+                <li>四川大学华西医院</li>
+                <li>四川大学华西医院</li>
+                <li>四川大学华西医院</li>
+                <li>四川大学华西医院</li>
+                <li>四川大学华西医院</li>
+                <li>四川大学华西医院</li>
+                <li>四川大学华西医院</li>
+                <li>四川大学华西医院</li>
+                <li>四川大学华西医院</li>
+            </ul>
+            <p>
+                <button onclick="cancel()">取消</button>
+                <button>确认</button>
+            </p>
+        </div>
+    </div>
+    <div class="delete_spring">
+        <div class="delete_spring_contant">
+            <p>确定要删除该就诊人吗？</p>
+            <p>
+                <button type="text" onclick="deleteCancel()">取消</button>
+                <button type="text" onclick="bb(this)">确定</button>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+    deleteClick = (thi, num, id) => {
+
+        if (num == 1) {
+            console.log(id)
+
+            $('.delete_spring').show()
+            $('.delete_spring p:nth-child(2) button:nth-child(2)').attr('data_id', id)
+        } else if (num == 2) {
+            console.log(id)
+            $('.delete_spring p:nth-child(2) button:nth-child(2)').attr('data_id', id)
+            $('.delete_spring').show()
+        }
+
+    }
+    bb = (thi) => {
+
+        console.log($(thi).attr('data_id'))
+    }
+    </script>
+    <footer>
+        <p>Copyright@2013-2016 www.jkscw.com.cn 版权所有 蜀ICP备09023884号</p>
+        <p>技术支持：四川快医科技有限责任公司</p>
+    </footer>
+</body>
+<script type="text/javascript">
+function addSpring(thi) {
+    $(thi).parent().children().removeAttr('style')
+    $(thi).css('color', '#16A9F6')
+
+}
+window.onload = function() {
+    function IdCard(UUserCard) {
+        //获取出生日期
+        var leng = (UUserCard + '').length
+        var year, monthty, dayty;
+        if (leng == 18) {
+            year = UUserCard.substring(6, 10)
+            monthty = UUserCard.substring(10, 12)
+            dayty = UUserCard.substring(12, 14)
+        } else if (leng == 15) {
+            year = "19" + UUserCard.substr(6, 2)
+            monthty = UUserCard.substr(8, 2)
+            dayty = UUserCard.substr(10, 2)
+
+        }
+        //获取年龄
+        var myDate = new Date();
+        var month = myDate.getMonth() + 1;
+        var day = myDate.getDate();
+        var age = myDate.getFullYear() - year - 1;
+        if (monthty <= month && dayty <= day) {
+            age++;
+        }
+        return age;
+
+    }
+    var age = IdCard('511011199005120732')
+    $('.managetable tr td:nth-child(4)').text(age)
+}
+</script>
+
+</html>

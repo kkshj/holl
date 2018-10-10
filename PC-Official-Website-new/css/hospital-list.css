@@ -1,0 +1,114 @@
+
+.crumbs{
+    height: 40px;
+    line-height: 40px;
+    background-color: #16A9F6;
+    color: #ffffff;
+    font-size: 14px;
+}
+.crumbs a{
+    color: inherit;
+}
+
+.sort.container{
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.sort>.container{
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: #E2E2E2 1px solid;
+}
+.sort>.container:last-child{
+    border-bottom: none;
+}
+.sort>.container:first-child{
+    margin-top: 0;
+}
+.sort ul{
+    width: 1050px;
+}
+.sort .sort-type{
+    font-size: 14px;
+    color: #8C919B;
+}
+.sort ul>li{
+    height: 20px;
+    line-height: 20px;
+    padding: 0 6px;
+    font-size: 14px;
+    color: #666666;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.sort>div:last-child>ul>li{
+    margin-bottom: 0;
+}
+.sort ul>li.chosen{
+    background-color: #16A9F6;
+    color: #ffffff;
+}
+.sort ul>li.chosen:first-child{
+    background-color: #99A0AA;
+}
+
+.hospital-list{
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.hospital-list .list>li{
+    width: 550px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+.hospital-list .list>li:nth-child(2n){
+    margin-right: 0;
+}
+.hospital-list .list>li img.left{
+    width: 180px;
+    height: 135px;
+    border-radius: 4px;
+}
+.hospital-list .list>li div.right{
+    width: 330px;
+}
+.hospital-list .list>li div.right>span{
+    display: block;
+}
+.hospital-list .list>li div.right span{
+    color: #8B919B;
+    font-size: 12px;
+}
+.hospital-list .list>li div.right>span:first-child{
+    color: #333333;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width:32 0px;
+        overflow: hidden;
+
+    text-overflow: ellipsis;
+    
+    white-space: nowrap;
+}
+.hospital-list .list>li div.right>div{
+    margin-top: 25px;
+    line-height: 24px;
+}
+.hospital-list .list>li div.right>div>button{
+    width: 50px;
+    height: 24px;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #16A9F6;
+    margin-right: 20px;
+    cursor: pointer;
+}

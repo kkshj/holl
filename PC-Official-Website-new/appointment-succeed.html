@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>预约成功</title>
+    <link rel="stylesheet" href="css/red-dragon-development.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/header-class.css">
+    <link rel="stylesheet" href="css/footer-class.css">
+    <link rel="stylesheet" href="css/hospital-doctor-list.css">
+    <link rel="stylesheet" href="css/appointment-succeed.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/hospital-payment.js"></script>
+</head>
+
+<body>
+    <iframe src="header.html" width="100%" height="140" scrolling="no" frameborder="0"></iframe>
+    <nav class="crumbs">
+        <div class="container">当前位置：<a href="">首页</a>><a href="">医院列表</a>><a href="">四川大学华西医院</a><span>预约</span></div>
+    </nav>
+    <div class="appointment_succeed">
+        <p><img src="images/img-11.png"></p>
+        <p>预约成功</p>
+        <p>系统将会在<span>9s</span>后自动跳转至预约中心，<u>立即跳转</u></p>
+    </div>
+    <div class="appointment_failed">
+        <p><img src="images/img-10.png"></p>
+        <p>预约失败</p>
+        <p>卡号信息有误，无法预约!</p>
+        <p>系统将会在<span>9s</span>后自动跳转至网站首页</p>
+    </div>
+    <div class="appointment_routine">
+        <p><img src="images/img-16.png"></p>
+        <p>“健康四川服务”小程序问诊咨询、药品配送功能已开通上线
+        </p>
+        <p>微信扫码即可体验</p>
+    </div>
+    <footer>
+        <p>Copyright@2013-2016 www.jkscw.com.cn 版权所有 蜀ICP备09023884号</p>
+        <p>技术支持：四川快医科技有限责任公司</p>
+    </footer>
+</body>
+<script>
+$(document).ready(function() {
+    var num = 2;
+
+    var item = 10; //定时
+    if (num == 1) {
+        var vole = setInterval(function() {
+            item--;
+            if (item >= 0) {
+                $('.appointment_failed p:nth-child(4) span').text(item + 's')
+            } else {
+                window.clearInterval(vole);
+                window.location.href = 'index.html'
+            }
+        }, 1000)
+    } else {
+        var vole = setInterval(function() {
+            item--;
+            if (item >= 0) {
+                $('.appointment_succeed p:nth-child(3) span').text(item + 's')
+            } else {
+                window.clearInterval(vole);
+                // window.location.href = 'appointment-succeed.html'
+            }
+        }, 1000)
+
+    }
+})
+</script>
+
+</html>

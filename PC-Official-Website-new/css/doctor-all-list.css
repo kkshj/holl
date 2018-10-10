@@ -1,0 +1,78 @@
+.doctorAll{
+	width: 1200px;
+	margin: auto;
+}
+
+.doctorAll_top{
+	margin-top: 20px;
+
+}
+.doctor_container_right{
+
+	padding-bottom: 20px;
+}
+.doctor_container_left{
+
+	padding-bottom: 20px;
+}
+.doctorAll_contant{
+height: 1270px;
+padding: 0 60px;
+
+}
+
+.doctorAll_introduce{
+	height: 300px;
+	
+}
+
+
+.doctorAll_doctorList li{
+	cursor: pointer;
+	background-color:transparent; 
+}
+
+.doctorAll_introduce p:nth-child(6){
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top:10px;
+}
+.doctorAll_introduce p:nth-child(6) span:nth-child(1){
+	font-size: 16px;
+	color: #666;
+	
+}.doctorAll_introduce p:nth-child(6) span:nth-child(2){
+	font-size: 16px;
+	color: #079BF1;
+	cursor: pointer;
+
+}
+.doctorAll_top_all{
+	color: #333 !important;
+	border-bottom: 2px solid #333;
+}
+
+.doctor_right span:nth-child(2){
+	/*display: block;*/
+	overflow: hidden;
+	width: 280px;
+	height: 84px;
+
+}
+.doctor_right span:first-child{
+	
+	margin:0 0 10px !important;
+}
+.doctor_right span:nth-child(2) small{
+	display: inline-block;
+	font-size: 12px;
+padding: 2px 4px;
+	border-radius: 2px;
+	border: 1px solid #99A0AA ;
+	margin-bottom: 6px;
+	margin-right: 10px;
+}
+.doctor_right>div{
+	margin-top: 0 !important;
+}

@@ -1,0 +1,336 @@
+ body {
+    font-size: 14px;
+}
+
+.doctorManage_right_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.doctorManage_right_top span:nth-child(2) {
+    color: #FE9B00;
+    padding-right: 50px;
+}
+
+.doctorManage_right_top span:nth-child(1) {
+    font-size: 16px;
+    color: #333;
+    cursor: auto;
+}
+
+.doctorManage_right_top span {
+    padding-bottom: 0;
+}
+.doctorCenter_right_foot{
+	overflow: auto;
+}
+table.managetable {
+    font-family: verdana, arial, sans-serif;
+    font-size: 14px;
+    margin: auto;
+    width: 830px;
+    border-collapse: collapse;
+    border: 1px solid #E2E2E2;
+}
+
+table.managetable th:nth-child(6) {
+    width: 191px;
+}
+
+table.managetable th {
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #E8E3E0;
+    background-color: #8C919B;
+}
+
+table.managetable tr {
+    border: 1px solid #E2E2E2;
+}
+
+table.managetable td {
+
+    padding: 20px 0;
+    color: #666;
+    text-align: center;
+}
+
+table.managetable td:nth-child(6) p:nth-child(1) span {
+    color: #8C919B;
+    cursor: pointer;
+}
+
+table.managetable td:nth-child(8) {
+    width: 50px;
+}
+
+table.managetable td:nth-child(8) img {
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    w
+}
+
+table.managetable td:nth-child(7) span {
+    color: #8C919B;
+    cursor: pointer;
+}
+
+table.managetable td:nth-child(6) p:nth-child(2) {
+    display: none;
+}
+
+table.managetable td:nth-child(6) p:nth-child(2) input {
+    width: 110px;
+    height: 30px;
+    background-color: #E2E2E2;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+
+table.managetable td:nth-child(6) p:nth-child(2) span {
+    background-color: #16A9F6;
+    border-radius: 2px;
+    color: #fff;
+    padding: 1px 5px;
+    cursor: pointer;
+}
+
+
+
+.doctorManage_spring_rate {
+
+    width: 830px;
+height: 250px;
+padding-top: 1px;
+    background-color: #999;
+   
+
+}
+.interposition{
+    display: none;
+    
+}
+table.managetable .interposition td{
+    padding:0;
+}
+.doctorManage_spring_rate li span {
+    color: #8C919B;
+    width: 230px;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+
+}
+.doctorManage_spring_rate li span:nth-child(3) {
+    width: 80px;
+    cursor: pointer;
+}
+.doctorManage_spring_rate ul {
+    margin:20px 20px 0;
+    background-color: #fff;
+    height: 160px;
+    overflow-y:auto;
+}
+
+.doctorManage_spring_rate li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.doctorManage_spring_rate .doctorManage_spring_foot {
+    
+    margin:0 20px;
+    padding:10PX 30PX;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #fff;
+}
+
+.doctorManage_spring_rate .doctorManage_spring_foot span:nth-child(1) img {
+    width: 28px;
+    height: 28px;
+}
+
+.doctorManage_spring_rate .doctorManage_spring_foot span:nth-child(1) {
+    width: 200px;
+    height: 34px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 4px;
+    border: 1px solid #E2E2E2;
+
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doctorManage_spring_rate .doctorManage_spring_foot span:nth-child(2) {
+    width: 280px;
+}
+
+.doctorManage_spring_rate .doctorManage_spring_foot span:nth-child(2) input {
+    width: 200px;
+    height: 34px;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.doctorManage_spring_rate .doctorManage_spring_foot span:nth-child(3) small {
+    background-color: #16A9F6;
+    border-bottom: 0;
+    border-radius: 2px;
+    color: #fff;
+    padding: 2px 5px;
+    cursor: pointer;
+    margin-right: 40px;
+}
+.addSpring{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background:rgba(0,0,0,.4);
+
+	display: none;
+
+}
+
+.addSpring_content{
+	opacity: 1;
+	width:520px;
+height:500px;
+background:rgba(255,255,255,1);
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top:-250px;
+margin-left: -260px;
+}
+.addSpring_content p:nth-child(1){
+	padding: 30px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+.addSpring_content p:nth-child(1) button{
+	width:90px;
+height:35px;
+background:rgba(140,145,155,1);
+border-radius:4px;
+cursor: pointer;
+}
+.addSpring_content p:nth-child(1) input{
+width:300px;
+height:40px;
+background:rgba(245,245,245,1);
+border-radius:4px;
+padding-left: 10px;
+margin:0 20px 0 0px;
+}
+.addSpring_content ul{
+	width:420px;
+height:280px;
+	margin-left: 50px;
+	overflow: auto;
+	border: 1px solid #E2E2E2;
+}
+.addSpring_content li:nth-child(1){
+	padding-top: 20px;
+}
+.addSpring_content li:hover{
+    color: #fff;
+    background-color:#999999;
+}
+.addSpring_content li{
+	color: #666;
+	font-size: 14px;
+	padding: 10px;
+	cursor: pointer;
+
+}
+.addSpring_content p:nth-child(3) {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 30px;
+	margin: 30px 50px;
+}
+.addSpring_content p:nth-child(3) button:nth-child(2){
+	width:120px;
+height:40px;
+background:rgba(22,169,246,1);
+border-radius:4px;
+font-size: 20px;
+color: #fff;
+cursor: pointer;
+}
+.addSpring_content p:nth-child(3) button:nth-child(1){
+width:120px;
+height:40px;
+font-size: 20px;
+color: #999999;
+cursor: pointer;
+border-radius:4px;
+border: 1px solid #E2E2E2;
+}
+#medicalHospital{
+    overflow-y: auto;
+}
+.delete_spring{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+}
+.delete_spring_contant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ 
+    width:520px;
+height:240px;
+   margin-top: -120px;
+    margin-left: -260px;
+background:rgba(255,255,255,1);
+font-size: 20px;
+}
+.delete_spring_contant p:nth-child(1){
+    color: #666;
+    text-align: center;
+    padding: 60px 0;
+    
+}
+.delete_spring_contant p:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 90px;
+}
+.delete_spring_contant p:nth-child(2) button:nth-child(1){
+    width:120px;
+height:40px;
+font-size: 20px;
+cursor: pointer;
+border-radius:4px;
+color: #999;border: 1px solid #E2E2E2;
+}.delete_spring_contant p:nth-child(2) button:nth-child(2){
+    width:120px;
+    font-size: 20px;
+    cursor: pointer;
+height:40px;
+background:rgba(22,169,246,1);
+border-radius:4px;
+color: #fff;border: 1px solid #16A9F6;
+}
