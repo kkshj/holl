@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.el-icon-person>input{
+  background-image: url("./bussiness-man.png");
+  background-size: 16px;
+  background-position: 8px center;
+  background-repeat: no-repeat;
+}
+.el-icon-lock>input{
+  background-image: url("./password.png");
+  background-size: 16px;
+  background-position: 8px center;
+  background-repeat: no-repeat;
+}
+
+.el-input-number .el-input__inner{
+  text-align: left;
+}
